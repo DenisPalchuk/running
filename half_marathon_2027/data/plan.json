@@ -1,0 +1,1052 @@
+{
+  "version": "1.1",
+  "created": "2026-09-29",
+  "race_date": "2027-04-04",
+  "goal": "Best feasible half-marathon performance with controlled early pacing",
+  "default_run_days": [
+    "Monday",
+    "Wednesday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "default_rest_days": [
+    "Tuesday",
+    "Thursday"
+  ],
+  "schedule_note": "See each week: H Sunday or control Saturday replaces Friday quality; Thursday is then easy. Recovery and race weeks are exceptions.",
+  "warmup_minutes": 15,
+  "cooldown_minutes": 15,
+  "durations_include_warmup_cooldown_recoveries": true,
+  "strength_training_included": false,
+  "intensity": "Garmin RUNNING zones + RPE/talk test; no fixed BPM prescription",
+  "weeks": [
+    {
+      "week": 1,
+      "start": "2026-09-28",
+      "end": "2026-10-04",
+      "phase": "Восстановление",
+      "monday_min": 0,
+      "wednesday_min": 30,
+      "thursday_min": 35,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 50,
+      "wednesday_main": "E; только при уменьшающейся крепатуре",
+      "sunday_main": "E; можно сократить или пропустить",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        175,
+        185
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": true,
+      "note": "Восстановление: 3–4 необязательные пробежки; 28 сентября — уже прошедший день. Субботу можно заменить прогулкой."
+    },
+    {
+      "week": 2,
+      "start": "2026-10-05",
+      "end": "2026-10-11",
+      "phase": "Восстановление",
+      "monday_min": 35,
+      "wednesday_min": 45,
+      "thursday_min": 45,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 70,
+      "wednesday_main": "E; 4×12 с A только при полном восстановлении",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        255,
+        265
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Пять дней только при нормальной реакции на первую неделю."
+    },
+    {
+      "week": 3,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "phase": "Аэробная база I",
+      "monday_min": 40,
+      "wednesday_min": 55,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 55,
+      "friday_main": "S: 2×8 мин Z3 / 3 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 75,
+      "wednesday_main": "T: 3×5 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        285,
+        295
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Две небольшие работы после восстановления; пятница умеренная Z3."
+    },
+    {
+      "week": 4,
+      "start": "2026-10-19",
+      "end": "2026-10-25",
+      "phase": "Аэробная база I",
+      "monday_min": 40,
+      "wednesday_min": 60,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 55,
+      "friday_main": "S: 20 мин Z3",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 80,
+      "wednesday_main": "T: 4×4 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        295,
+        305
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Постепенно увеличиваем рабочие минуты, без гонки на parkrun."
+    },
+    {
+      "week": 5,
+      "start": "2026-10-26",
+      "end": "2026-11-01",
+      "phase": "Аэробная база I",
+      "monday_min": 45,
+      "wednesday_min": 65,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 60,
+      "friday_main": "T: 2×8 мин Z4 / 3 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 85,
+      "wednesday_main": "T: 4×5 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        315,
+        325
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Пятница короче среды и ближе к нижней части Z4; сохранять контроль усилия."
+    },
+    {
+      "week": 6,
+      "start": "2026-11-02",
+      "end": "2026-11-08",
+      "phase": "Аэробная база I",
+      "monday_min": 35,
+      "wednesday_min": 50,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 50,
+      "friday_main": "S: 2×5 мин Z3 / 2 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 75,
+      "wednesday_main": "T: 2×5 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        270,
+        280
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Разгрузка: две сокращённые рабочие части, без наращивания скорости."
+    },
+    {
+      "week": 7,
+      "start": "2026-11-09",
+      "end": "2026-11-15",
+      "phase": "Аэробная база II",
+      "monday_min": 45,
+      "wednesday_min": 65,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 60,
+      "friday_main": "S: 20 мин Z3",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 90,
+      "wednesday_main": "T: 3×6 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        320,
+        330
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Среда T, пятница умеренная S; длительная полностью лёгкая."
+    },
+    {
+      "week": 8,
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "phase": "Аэробная база II",
+      "monday_min": 45,
+      "wednesday_min": 65,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 60,
+      "friday_main": "T: 2×10 мин Z4 / 3 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 95,
+      "wednesday_main": "T: 3×8 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        325,
+        335
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Равномерные повторы важнее скорости первого."
+    },
+    {
+      "week": 9,
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "phase": "Аэробная база II",
+      "monday_min": 45,
+      "wednesday_min": 70,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 60,
+      "friday_main": "T: 2×8 мин Z4 / 3 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 100,
+      "wednesday_main": "V: 5×3 мин Z4–Z5 / 3 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        335,
+        345
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "V только на нескользком покрытии; альтернатива 3×6 мин T."
+    },
+    {
+      "week": 10,
+      "start": "2026-11-30",
+      "end": "2026-12-06",
+      "phase": "Аэробная база II",
+      "monday_min": 35,
+      "wednesday_min": 50,
+      "thursday_min": 50,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Saturday"
+      ],
+      "saturday_min_estimate": [
+        55,
+        65
+      ],
+      "sunday_min": 75,
+      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "sunday_main": "E; после контроля можно 45–60 мин",
+      "saturday_kind": "control_5k",
+      "weekly_min_estimate": [
+        265,
+        275
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Контроль parkrun 5 декабря; при плохих условиях обычный лёгкий parkrun."
+    },
+    {
+      "week": 11,
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "phase": "Развитие выносливости",
+      "monday_min": 45,
+      "wednesday_min": 70,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 60,
+      "friday_main": "S: 25 мин Z3",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 105,
+      "wednesday_main": "T: 2×12 мин Z4 / 3 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        340,
+        350
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "После контрольной недели вернуть прежний объём, затем прибавить."
+    },
+    {
+      "week": 12,
+      "start": "2026-12-14",
+      "end": "2026-12-20",
+      "phase": "Развитие выносливости",
+      "monday_min": 45,
+      "wednesday_min": 75,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 65,
+      "friday_main": "S: 20 мин Z3",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 110,
+      "wednesday_main": "T: 3×10 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        355,
+        365
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "30 минут рабочей части — предел этой среды, не 3×15."
+    },
+    {
+      "week": 13,
+      "start": "2026-12-21",
+      "end": "2026-12-27",
+      "phase": "Развитие выносливости",
+      "monday_min": 35,
+      "wednesday_min": 55,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 55,
+      "friday_main": "S: 2×6 мин Z3 / 2 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 85,
+      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        290,
+        300
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Разгрузка 21–27 декабря; удобное окно для поездок."
+    },
+    {
+      "week": 14,
+      "start": "2026-12-28",
+      "end": "2027-01-03",
+      "phase": "Развитие выносливости",
+      "monday_min": 45,
+      "wednesday_min": 75,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 65,
+      "friday_main": "T: 2×10 мин Z4 / 3 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 110,
+      "wednesday_main": "V: 5×3 мин Z4–Z5 / 3 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        355,
+        365
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "На снегу заменить V на 3×8 мин T или E; не догонять праздничные пропуски."
+    },
+    {
+      "week": 15,
+      "start": "2027-01-04",
+      "end": "2027-01-10",
+      "phase": "Развитие выносливости",
+      "monday_min": 45,
+      "wednesday_min": 75,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 65,
+      "friday_main": "H: 2×12 мин / 3 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 115,
+      "wednesday_main": "T: 2×15 мин Z4 / 3 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        360,
+        370
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Две контролируемые работы; пятничные H-блоки не превращать в гонку."
+    },
+    {
+      "week": 16,
+      "start": "2027-01-11",
+      "end": "2027-01-17",
+      "phase": "Развитие выносливости",
+      "monday_min": 35,
+      "wednesday_min": 55,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 55,
+      "friday_main": "T: 2×5 мин Z4 / 2 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 90,
+      "wednesday_main": "S: 2×8 мин Z3 / 3 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        295,
+        305
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Разгрузка и решение о входе в специфический блок."
+    },
+    {
+      "week": 17,
+      "start": "2027-01-18",
+      "end": "2027-01-24",
+      "phase": "Специфика I",
+      "monday_min": 45,
+      "wednesday_min": 65,
+      "thursday_min": 75,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Sunday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 110,
+      "wednesday_main": "T: 2×8 мин Z4 / 3 мин легко",
+      "sunday_main": "H: 3×8 мин / 4 мин легко; всё внутри 110 мин",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        355,
+        365
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Новая нагрузка в воскресенье; среда сокращена."
+    },
+    {
+      "week": 18,
+      "start": "2027-01-25",
+      "end": "2027-01-31",
+      "phase": "Специфика I",
+      "monday_min": 40,
+      "wednesday_min": 55,
+      "thursday_min": 60,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Saturday"
+      ],
+      "saturday_min_estimate": [
+        55,
+        65
+      ],
+      "sunday_min": 75,
+      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "sunday_main": "E; после контроля можно 45–60 мин",
+      "saturday_kind": "control_5k",
+      "weekly_min_estimate": [
+        285,
+        295
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Контроль parkrun 30 января; воскресенье восстановительное."
+    },
+    {
+      "week": 19,
+      "start": "2027-02-01",
+      "end": "2027-02-07",
+      "phase": "Специфика I",
+      "monday_min": 45,
+      "wednesday_min": 70,
+      "thursday_min": 80,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Sunday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 115,
+      "wednesday_main": "T: 2×10 мин Z4 / 3 мин легко",
+      "sunday_main": "H: 2×15 мин / 5 мин легко; внутри 115 мин",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        370,
+        380
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Первый длинный H-блок. Суббота строго лёгкая."
+    },
+    {
+      "week": 20,
+      "start": "2027-02-08",
+      "end": "2027-02-14",
+      "phase": "Специфика I",
+      "monday_min": 40,
+      "wednesday_min": 60,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 55,
+      "friday_main": "S: 15 мин Z3",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 90,
+      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        305,
+        315
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Разгрузка: короткие T и S; оценить восстановление после специфических работ."
+    },
+    {
+      "week": 21,
+      "start": "2027-02-15",
+      "end": "2027-02-21",
+      "phase": "Специфика II",
+      "monday_min": 45,
+      "wednesday_min": 75,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 65,
+      "friday_main": "T: 2×10 мин Z4 / 3 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 120,
+      "wednesday_main": "V: 5×3 мин Z4–Z5 / 3 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        365,
+        375
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Последняя отдельная V-сессия; при утомлении заменить на 2×10 мин T."
+    },
+    {
+      "week": 22,
+      "start": "2027-02-22",
+      "end": "2027-02-28",
+      "phase": "Специфика II",
+      "monday_min": 45,
+      "wednesday_min": 65,
+      "thursday_min": 80,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Sunday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 125,
+      "wednesday_main": "T: 2×8 мин Z4 / 3 мин легко",
+      "sunday_main": "H: 3×12 мин / 4 мин легко; внутри 125 мин",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        375,
+        385
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "36 минут H. Питание и одежда как на будущем старте."
+    },
+    {
+      "week": 23,
+      "start": "2027-03-01",
+      "end": "2027-03-07",
+      "phase": "Специфика II",
+      "monday_min": 40,
+      "wednesday_min": 55,
+      "thursday_min": 60,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Saturday"
+      ],
+      "saturday_min_estimate": [
+        55,
+        65
+      ],
+      "sunday_min": 75,
+      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "sunday_main": "E; после контроля можно 45–60 мин",
+      "saturday_kind": "control_5k",
+      "weekly_min_estimate": [
+        285,
+        295
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Контроль parkrun 6 марта; это разгрузочная неделя."
+    },
+    {
+      "week": 24,
+      "start": "2027-03-08",
+      "end": "2027-03-14",
+      "phase": "Специфика II",
+      "monday_min": 45,
+      "wednesday_min": 65,
+      "thursday_min": 85,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Sunday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 125,
+      "wednesday_main": "T: 2×8 мин Z4 / 3 мин легко",
+      "sunday_main": "H: 2×20 мин / 5 мин легко; внутри 125 мин",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        380,
+        390
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "14 марта — последняя большая специфическая длительная, за три недели до старта."
+    },
+    {
+      "week": 25,
+      "start": "2027-03-15",
+      "end": "2027-03-21",
+      "phase": "Специфика II",
+      "monday_min": 45,
+      "wednesday_min": 75,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 60,
+      "friday_main": "H: 2×8 мин / 3 мин легко",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 105,
+      "wednesday_main": "T: 3×8 мин Z4 / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        345,
+        355
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Консолидация; новых рекордов объёма уже нет."
+    },
+    {
+      "week": 26,
+      "start": "2027-03-22",
+      "end": "2027-03-28",
+      "phase": "Тейпер",
+      "monday_min": 35,
+      "wednesday_min": 55,
+      "thursday_min": 45,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Sunday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        65
+      ],
+      "sunday_min": 75,
+      "wednesday_main": "T: 2×6 мин Z4 / 3 мин легко",
+      "sunday_main": "H: 2×6 мин / 3 мин легко; внутри 75 мин; при усталости E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        270,
+        275
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Первый тейпер: сократить лёгкие минуты и рабочие блоки."
+    },
+    {
+      "week": 27,
+      "start": "2027-03-29",
+      "end": "2027-04-04",
+      "phase": "Тейпер",
+      "monday_min": 25,
+      "wednesday_min": 40,
+      "thursday_min": 25,
+      "thursday_main": "E",
+      "friday_min": 0,
+      "friday_main": "Отдых",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday",
+        "Sunday_race"
+      ],
+      "saturday_min_estimate": [
+        35,
+        40
+      ],
+      "sunday_min": null,
+      "wednesday_main": "H: 3×2 мин / 2 мин легко",
+      "sunday_main": "Старт 21,0975 км; разминка 10–15 мин отдельно",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        125,
+        130
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "3 апреля: 5 км parkrun Z1–низ Z2, до/от парка пешком; при тяжести в ногах 15–20 мин у дома или отдых."
+    }
+  ],
+  "rules": {
+    "long_run_ceiling_min": 125,
+    "long_run_ceiling_km": 21,
+    "ordinary_training_week_ceiling_km": 60,
+    "growth_condition": "Only progress after completing preceding work and recovering; reduce duration if distance would create a large jump vs preceding30days; no catch-up sessions",
+    "specific_long_effort": "upper Z3 / lower Z4, RPE5-6, stable blocks",
+    "race_week_total_note": "Totals exclude race and race warmup. Saturday commute on foot. Week1 totals are optional ceilings, not completion target."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "retrieved_date": "2026-09-29",
+  "purpose": "Snapshot only; workouts prescribe zones and perceived effort, never fixed BPM. Saved zone floors are not lab-verified thresholds.",
+  "running_zones": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"trainingMethod\": \"LACTATE_THRESHOLD\",\n  \"restingHeartRateUsed\": 41,\n  \"lactateThresholdHeartRateUsed\": 174,\n  \"zone1Floor\": 111,\n  \"zone2Floor\": 132,\n  \"zone3Floor\": 150,\n  \"zone4Floor\": 161,\n  \"zone5Floor\": 171,\n  \"maxHeartRateUsed\": 192,\n  \"restingHrAutoUpdateUsed\": true,\n  \"sport\": \"RUNNING\",\n  \"changeState\": \"UNCHANGED\"\n}"
+      }
+    ],
+    "isError": false
+  },
+  "lactate_threshold": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"lactate_threshold_speed_mps\": 2.880008064022579,\n  \"lactate_threshold_heart_rate_bpm\": 174,\n  \"speed_hr_date\": \"2026-08-05T08:10:57.692\",\n  \"functional_threshold_power_watts\": 430,\n  \"weight_kg\": 88.8,\n  \"power_to_weight\": 4.842342342342342,\n  \"sport\": \"RUNNING\",\n  \"power_date\": \"2026-07-04T08:13:11.0\",\n  \"is_stale\": false\n}"
+      }
+    ],
+    "isError": false
+  }
+}
