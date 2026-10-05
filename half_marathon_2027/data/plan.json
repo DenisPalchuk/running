@@ -290,7 +290,7 @@
       "start": "2026-11-09",
       "end": "2026-11-15",
       "phase": "Аэробная база II",
-      "monday_min": 60,
+      "monday_min": 50,
       "wednesday_min": 65,
       "thursday_min": 0,
       "thursday_main": "Отдых",
@@ -315,12 +315,12 @@
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        320,
-        330
+        310,
+        320
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "After the week 6 recovery, hold T at 3×6 while the long run returns to 90 min and Monday adds easy time. The 65-min session leaves easy time beyond the T work. Apply the rolling-30-day distance and recovery checks before each increase.",
+      "note": "After the week 6 recovery, hold T at 3×6 while the long run returns to 90 min. Monday rises to 50 min; the 65-min Wednesday session leaves easy time beyond the T work. Apply the rolling-30-day distance and recovery checks before each increase.",
       "monday_main": "E",
       "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
@@ -368,8 +368,8 @@
       "start": "2026-11-23",
       "end": "2026-11-29",
       "phase": "Аэробная база II",
-      "monday_min": 65,
-      "wednesday_min": 60,
+      "monday_min": 60,
+      "wednesday_min": 65,
       "thursday_min": 0,
       "thursday_main": "Отдых",
       "friday_min": 45,
@@ -398,7 +398,7 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Hold T at 3×6; long run reaches 100 min. Monday adds 5 min to keep added light time near 10–15 min. Proceed only when actual-distance and recovery checks are satisfied.",
+      "note": "Hold T at 3×6; long run reaches 100 min. Monday rises to 60 min and Wednesday to 65 min, shifting 5 easy minutes from Monday to Wednesday while keeping the weekly total unchanged. Proceed only when actual-distance and recovery checks are satisfied.",
       "monday_main": "E",
       "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
@@ -508,7 +508,7 @@
         70
       ],
       "sunday_min": 105,
-      "wednesday_main": "T: 3×5 мин / 2 мин легко",
+      "wednesday_main": "T: 3×6 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
