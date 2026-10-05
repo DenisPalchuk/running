@@ -1,5 +1,5 @@
 {
-  "version": "1.5",
+  "version": "1.6",
   "created": "2026-10-05",
   "race_date": "2027-04-04",
   "goal": "Best feasible half-marathon performance with controlled early pacing",
@@ -14,7 +14,7 @@
     "Tuesday",
     "Thursday"
   ],
-  "schedule_note": "Дни пробежек и отдыха указаны для каждой недели; воскресные недели с H заменяют пятничную работу, контрольная суббота заменяет обычный паркрани. Проверка дистанции каждой пробежки относительно предыдущих 30 дней имеет приоритет над ростом времени.",
+  "schedule_note": "Дни пробежек и отдыха указаны для каждой недели; воскресные недели с H заменяют пятничную работу, контрольная суббота заменяет обычный parkrun. Проверка дистанции каждой пробежки относительно предыдущих 30 дней имеет приоритет над ростом времени.",
   "warmup_minutes": 15,
   "cooldown_minutes": 15,
   "durations_include_warmup_cooldown_recoveries": true,
@@ -194,7 +194,7 @@
         70
       ],
       "sunday_min": 80,
-      "wednesday_main": "T: 2×5 мин / 2 мин легко",
+      "wednesday_main": "T: 2×6 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
@@ -213,7 +213,7 @@
       "end": "2026-11-01",
       "phase": "Аэробная база I",
       "monday_min": 40,
-      "wednesday_min": 50,
+      "wednesday_min": 55,
       "thursday_min": 0,
       "thursday_main": "Отдых",
       "friday_min": 45,
@@ -233,16 +233,16 @@
         70
       ],
       "sunday_min": 85,
-      "wednesday_main": "T: 2×5 мин / 2 мин легко",
+      "wednesday_main": "T: 3×6 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        280,
-        290
+        285,
+        295
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "note": "T reaches 18 controlled work minutes by week 5; the long run also rises in this early progression. Increase only if quality remains controlled and recovery is normal.",
       "monday_main": "E",
       "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
@@ -290,8 +290,8 @@
       "start": "2026-11-09",
       "end": "2026-11-15",
       "phase": "Аэробная база II",
-      "monday_min": 50,
-      "wednesday_min": 55,
+      "monday_min": 60,
+      "wednesday_min": 65,
       "thursday_min": 0,
       "thursday_main": "Отдых",
       "friday_min": 45,
@@ -311,16 +311,16 @@
         70
       ],
       "sunday_min": 90,
-      "wednesday_main": "T: 2×5 мин / 2 мин легко",
+      "wednesday_main": "T: 3×6 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        300,
-        310
+        320,
+        330
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "note": "After the week 6 recovery, hold T at 3×6 while the long run returns to 90 min and Monday adds easy time. The 65-min session leaves easy time beyond the T work. Apply the rolling-30-day distance and recovery checks before each increase.",
       "monday_main": "E",
       "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
@@ -329,47 +329,8 @@
       "start": "2026-11-16",
       "end": "2026-11-22",
       "phase": "Аэробная база II",
-      "monday_min": 50,
-      "wednesday_min": 55,
-      "thursday_min": 0,
-      "thursday_main": "Отдых",
-      "friday_min": 45,
-      "friday_main": "E + 4×12 с A по желанию",
-      "run_days": [
-        "Monday",
-        "Wednesday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "quality_days": [
-        "Wednesday"
-      ],
-      "saturday_min_estimate": [
-        60,
-        70
-      ],
-      "sunday_min": 90,
-      "wednesday_main": "T: 3×5 мин / 2 мин легко",
-      "sunday_main": "E",
-      "saturday_kind": "easy_parkrun",
-      "weekly_min_estimate": [
-        300,
-        310
-      ],
-      "race_minutes_included": false,
-      "optional_recovery_week": false,
-      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
-      "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
-    },
-    {
-      "week": 9,
-      "start": "2026-11-23",
-      "end": "2026-11-29",
-      "phase": "Аэробная база II",
-      "monday_min": 60,
-      "wednesday_min": 55,
+      "monday_min": 55,
+      "wednesday_min": 60,
       "thursday_min": 0,
       "thursday_main": "Отдых",
       "friday_min": 45,
@@ -389,7 +350,7 @@
         70
       ],
       "sunday_min": 95,
-      "wednesday_main": "T: 3×5 мин / 2 мин легко",
+      "wednesday_main": "T: 3×6 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
@@ -398,7 +359,46 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "note": "Hold T at 3×6; the long run progresses to 95 min. The longer Wednesday and long run add 15 weekly minutes over v1.5; after accounting for the 3 extra T minutes, easy time rises by about 12 min. Check actual distance and recovery before increasing.",
+      "monday_main": "E",
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
+    },
+    {
+      "week": 9,
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "phase": "Аэробная база II",
+      "monday_min": 65,
+      "wednesday_min": 60,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 45,
+      "friday_main": "E + 4×12 с A по желанию",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 100,
+      "wednesday_main": "T: 3×6 мин / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        330,
+        340
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Hold T at 3×6; long run reaches 100 min. Monday adds 5 min to keep added light time near 10–15 min. Proceed only when actual-distance and recovery checks are satisfied.",
       "monday_main": "E",
       "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
@@ -429,7 +429,7 @@
         65
       ],
       "sunday_min": 75,
-      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "wednesday_main": "T: 2×6 мин / 2 мин легко",
       "sunday_main": "E; после контроля можно 45–60 мин",
       "saturday_kind": "control_5k",
       "weekly_min_estimate": [
@@ -745,7 +745,7 @@
         65
       ],
       "sunday_min": 75,
-      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "wednesday_main": "T: 2×6 мин / 2 мин легко",
       "sunday_main": "E; после контроля можно 45–60 мин",
       "saturday_kind": "control_5k",
       "weekly_min_estimate": [
@@ -943,7 +943,7 @@
         65
       ],
       "sunday_min": 75,
-      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "wednesday_main": "T: 2×6 мин / 2 мин легко",
       "sunday_main": "E; после контроля можно 45–60 мин",
       "saturday_kind": "control_5k",
       "weekly_min_estimate": [
@@ -1124,12 +1124,12 @@
     "specific_long_effort": "Updated upper Z3 / lower Z4 is provisional guidance; RPE5-6, stable long blocks; refine using block consistency, recovery and control races",
     "race_week_total_note": "Totals exclude race and race warmup. Saturday commute on foot. Week1 totals are optional ceilings, not completion target.",
     "monday_distribution": "Conversational E in weeks 3–5,7–9,11–12,14–15,17,19,21–22,24; R on other scheduled Mondays. After H-long weeks 17,19,22,24 the next Monday is R. Easy E is talk-test and RPE guided; if tired shorten or rest without compensation.",
-    "winter_volume_review": "После недели 19 оцени фактически выполненные недели, восстановление и качество тренировок, прежде чем рассматривать дополнительную позднюю ветку лёгких минут в неделях 21, 22 и 24. Одна только дата не включает эту ветку.",
-    "ordinary_training_week_base_ceiling_note": "Conservative planning choice informed by six-month recorded weekly maximum 355 min in the 10 km cycle and 353.45 min in the half-marathon cycle; not a physiological ceiling. Optional late conditional branch may reach 390 min after review.",
-    "distance_progression": "At every run, compare planned distance with the longest single run in the rolling previous 30 days; this check overrides apparent time-based increases. If the planned distance is about 10% or more above recent longest, reduce or hold distance.",
+    "winter_volume_review": "После недели 19 оцени фактически выполненные недели, восстановление и качество тренировок, прежде чем рассматривать дополнительную позднюю ветку лёгких минут в неделях 21–22. Одна только дата не включает эту ветку.",
+    "ordinary_training_week_base_ceiling_note": "Conservative planning choice informed by six-month recorded weekly maximum 355 min in the 10 km cycle and 353.45 min in the half-marathon cycle; not a physiological ceiling. Optional late conditional branch may reach 375 min after review.",
+    "distance_progression": "Before each run, compare its expected distance with the longest single run in the rolling previous 30 days and check recovery; this overrides time-based progression. A distance jump over about 10% is an observational risk signal, not a safe/unsafe boundary. If the planned run is around 10% or more above recent longest, hold or reduce distance; smaller increases still require normal recovery and judgment.",
     "conditional_late_branch": {
       "review_after_week": 19,
-      "max_planning_minutes": 390,
+      "max_planning_minutes": 375,
       "not_physiological_ceiling": true,
       "entry_conditions": [
         "After week 19, at least 4 actual working weeks of 330–360 min in prior 6–8 calendar weeks (recovery/control weeks need not reach that volume)",
@@ -1158,21 +1158,10 @@
             375
           ],
           "rule": "Только если неделя 21 прошла стабильно."
-        },
-        "24": {
-          "monday_min": 60,
-          "wednesday_min": 65,
-          "thursday_min": 70,
-          "sunday_min": 125,
-          "weekly_min_estimate": [
-            380,
-            390
-          ],
-          "rule": "Только если неделя 22 прошла стабильно, а контрольная неделя 23 и восстановление были обычными."
         }
       },
-      "description": "Optional easy-minute additions only; planning ceiling 390 min, not a physiological ceiling. No extra T/H repetitions or intensity.",
-      "activation": "No date-based activation; use base plan if any condition is not met."
+      "description": "Optional easy-minute additions only in weeks 21–22; planning ceiling 375 min, not a physiological ceiling. No extra T/H repetitions or intensity.",
+      "activation": "No date-based activation; use base plan if any condition is not met. The optional branch applies only to weeks 21–22."
     },
     "volume_history": {
       "10k_2026_max_recorded_week_minutes": 355,
@@ -1190,6 +1179,8 @@
       ],
       "note": "Recorded volume is not the same as the historical plan: 56.6 km was a planned HM week, not a recorded-minutes maximum."
     },
-    "base_plan_ceiling_note": "Пик базового плана в 360 минут — консервативный плановый выбор с учётом зарегистрированных максимумов циклов (355 минут в подготовке к 10 км 2026 года и 353,45 минуты в подготовке к полумарафону 2026 года), а не физиологический предел. Условная поздняя ветка может довести объём до 390 минут после оценки восстановления и выполненных тренировок."
-  }
+    "base_plan_ceiling_note": "Пик базового плана в 360 минут — консервативный плановый выбор с учётом зарегистрированных максимумов циклов (355 минут в подготовке к 10 км 2026 года и 353,45 минуты в подготовке к полумарафону 2026 года), а не физиологический предел. Условная поздняя ветка недель 21–22 может довести объём до 375 минут после оценки восстановления и фактически выполненных тренировок.",
+    "version_1_6_note": "Пересмотр после v1.5: пороговая работа к неделе 5 достигает 18 минут, длительные недель 7–9 растут до 90/95/100 минут с обязательной проверкой фактической дистанции и восстановления; условная ветка ограничена неделями 21–22 и 375 минутами."
+  },
+  "version_note": "Пересмотр после v1.5: пороговая работа к неделе 5 достигает 18 минут, длительные недель 7–9 растут до 90/95/100 минут с обязательной проверкой фактической дистанции и восстановления; условная ветка ограничена неделями 21–22 и 375 минутами."
 }
