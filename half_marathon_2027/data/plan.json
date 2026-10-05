@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.5",
   "created": "2026-10-05",
   "race_date": "2027-04-04",
   "goal": "Best feasible half-marathon performance with controlled early pacing",
@@ -14,28 +14,47 @@
     "Tuesday",
     "Thursday"
   ],
-  "schedule_note": "See each week: H Sunday or control Saturday replaces Friday quality; Thursday is then easy. Recovery and race weeks are exceptions.",
+  "schedule_note": "Дни пробежек и отдыха указаны для каждой недели; воскресные недели с H заменяют пятничную работу, контрольная суббота заменяет обычный паркрани. Проверка дистанции каждой пробежки относительно предыдущих 30 дней имеет приоритет над ростом времени.",
   "warmup_minutes": 15,
   "cooldown_minutes": 15,
   "durations_include_warmup_cooldown_recoveries": true,
   "strength_training_included": false,
-  "intensity": "Updated Garmin RUNNING %LTHR zones + RPE/talk test; no fixed BPM prescription; zone changes do not prescribe faster running",
+  "intensity": "Garmin RUNNING %LTHR reference zones with talk test/RPE prescriptions; no fixed HR target for workouts; zone changes do not prescribe faster running",
   "zone_configuration": {
-    "confirmed_date": "2026-09-29",
-    "source": "User confirmed updated percentages on the watch; no new Garmin API retrieval",
+    "confirmed_date": "2026-10-05",
+    "source": "Fresh Garmin settings snapshot retrieved 2026-10-05; LTHR estimate still dated 2026-08-05",
     "profile": "RUNNING",
     "based_on": "%LTHR",
+    "lthr_bpm": 174,
+    "reference_floor_bpm": {
+      "Z1": 113,
+      "Z2": 139,
+      "Z3": 155,
+      "Z4": 165,
+      "Z5": 174
+    },
+    "reference_ranges_bpm": {
+      "Z1": "113–138",
+      "Z2": "139–154",
+      "Z3": "155–164",
+      "Z4": "165–173",
+      "Z5": "174+"
+    },
     "percent_ranges": {
       "Z1": "65–80",
       "Z2": "80–89",
       "Z3": "89–95",
       "Z4": "95–100",
-      "Z5": ">100"
+      "Z5": ">100%; Garmin integer floor displayed as 174"
     },
     "historical_snapshot": "data/garmin_snapshot_2026-09-29.json",
-    "snapshot_note": "Pre-update configuration retained for history, not current workout targets; updated percentages do not validate the threshold estimate",
-    "easy_effort": "Keep familiar conversational effort; do not chase the new upper Z2 boundary",
-    "tempo_effort": "T: controlled Z4, 95–100% LTHR as guidance, RPE6-7 with reserve; no requirement to reach the upper boundary or automatically speed up"
+    "fresh_snapshot": "data/garmin_snapshot_2026-10-05.json",
+    "snapshot_note": "Reference boundaries only; not lab-validated. Z5 floor 174 reflects integer rounding of the Garmin zone setting. E is governed by talk test/RPE, not numeric zone alone.",
+    "easy_effort": "RPE 2–3; full-sentence talk test, no minimum HR; 148–150 bpm is a temporary personal caution cue, not a target or hard physiological/safety cap; if talk test fails slow down",
+    "steady_effort": "S: RPE 3–4, below T; usually Z2 or low Z3 by effort; never force 155 bpm",
+    "tempo_effort": "T: controlled RPE 6–7; zone is contextual reference only, do not force 165–174 bpm",
+    "half_marathon_effort": "H: controlled RPE 5–6; validate by evenness and recovery, not a fixed pace forecast",
+    "reassessment": "Reassess the Garmin LTHR estimate around the 2026-12-05 control; include a fresh estimate and training response. A 5 km result alone does not measure LTHR."
   },
   "weeks": [
     {
@@ -70,7 +89,8 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": true,
-      "note": "Восстановление: 3–4 необязательные пробежки; 28 сентября — уже прошедший день. Субботу можно заменить прогулкой."
+      "note": "Восстановление: 3–4 необязательные пробежки; 28 сентября — уже прошедший день. Субботу можно заменить прогулкой.",
+      "monday_main": "Отдых"
     },
     {
       "week": 2,
@@ -105,19 +125,21 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Пять дней только при нормальной реакции на первую неделю."
+      "note": "Пять дней только при нормальной реакции на первую неделю.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 3,
       "start": "2026-10-12",
       "end": "2026-10-18",
       "phase": "Аэробная база I",
-      "monday_min": 50,
-      "wednesday_min": 65,
+      "monday_min": 40,
+      "wednesday_min": 50,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 55,
-      "friday_main": "S: 2×8 мин Z3 / 3 мин легко",
+      "friday_min": 45,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -126,118 +148,37 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
-      "sunday_min": 85,
-      "wednesday_main": "T: 3×5 мин Z4 / 2 мин легко",
+      "sunday_min": 75,
+      "wednesday_main": "T: 2×5 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        315,
-        325
+        270,
+        280
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "После недели восстановления: длинная 85 мин, если крепатура после гонки прошла и обычный бег без боли. T остаётся короткой; parkrun лёгкий.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 4,
       "start": "2026-10-19",
       "end": "2026-10-25",
       "phase": "Аэробная база I",
-      "monday_min": 55,
-      "wednesday_min": 70,
-      "thursday_min": 0,
-      "thursday_main": "Отдых",
-      "friday_min": 60,
-      "friday_main": "S: 20 мин Z3",
-      "run_days": [
-        "Monday",
-        "Wednesday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "quality_days": [
-        "Wednesday",
-        "Friday"
-      ],
-      "saturday_min_estimate": [
-        60,
-        70
-      ],
-      "sunday_min": 95,
-      "wednesday_main": "T: 3×8 мин Z4 / 2 мин легко",
-      "sunday_main": "E",
-      "saturday_kind": "easy_parkrun",
-      "weekly_min_estimate": [
-        340,
-        350
-      ],
-      "race_minutes_included": false,
-      "optional_recovery_week": false,
-      "note": "При нормальном восстановлении выйти примерно на 330–340 мин. Длительная 95 мин — лишь на 5 мин больше привычных 90 мин от 13 сентября.",
-      "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
-    },
-    {
-      "week": 5,
-      "start": "2026-10-26",
-      "end": "2026-11-01",
-      "phase": "Аэробная база I",
-      "monday_min": 60,
-      "wednesday_min": 75,
-      "thursday_min": 0,
-      "thursday_main": "Отдых",
-      "friday_min": 60,
-      "friday_main": "S: 25 мин Z3",
-      "run_days": [
-        "Monday",
-        "Wednesday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "quality_days": [
-        "Wednesday",
-        "Friday"
-      ],
-      "saturday_min_estimate": [
-        60,
-        70
-      ],
-      "sunday_min": 100,
-      "wednesday_main": "T: 3×10 мин Z4 / 2 мин легко",
-      "sunday_main": "E",
-      "saturday_kind": "easy_parkrun",
-      "weekly_min_estimate": [
-        355,
-        365
-      ],
-      "race_minutes_included": false,
-      "optional_recovery_week": false,
-      "note": "100 мин легко и 30 мин T — основной сценарий только при спокойной реакции на предыдущие недели. Среда 75 мин включает разминку 15 мин, подготовительные ускорения, повторы и заминку не менее 15 мин.",
-      "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
-    },
-    {
-      "week": 6,
-      "start": "2026-11-02",
-      "end": "2026-11-08",
-      "phase": "Аэробная база I",
-      "monday_min": 35,
+      "monday_min": 40,
       "wednesday_min": 50,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 50,
-      "friday_main": "S: 2×5 мин Z3 / 2 мин легко",
+      "friday_min": 45,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -246,15 +187,14 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
       "sunday_min": 80,
-      "wednesday_main": "T: 2×5 мин Z4 / 2 мин легко",
+      "wednesday_main": "T: 2×5 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
@@ -263,19 +203,99 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Разгрузка: сохранить короткие работы; длительная 80 мин, не увеличивать темп."
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "monday_main": "E",
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
+    },
+    {
+      "week": 5,
+      "start": "2026-10-26",
+      "end": "2026-11-01",
+      "phase": "Аэробная база I",
+      "monday_min": 40,
+      "wednesday_min": 50,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 45,
+      "friday_main": "E + 4×12 с A по желанию",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 85,
+      "wednesday_main": "T: 2×5 мин / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        280,
+        290
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "monday_main": "E",
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
+    },
+    {
+      "week": 6,
+      "start": "2026-11-02",
+      "end": "2026-11-08",
+      "phase": "Аэробная база I",
+      "monday_min": 35,
+      "wednesday_min": 45,
+      "thursday_min": 0,
+      "thursday_main": "Отдых",
+      "friday_min": 40,
+      "friday_main": "E",
+      "run_days": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "quality_days": [
+        "Wednesday"
+      ],
+      "saturday_min_estimate": [
+        60,
+        70
+      ],
+      "sunday_min": 70,
+      "wednesday_main": "T: 2×4 мин / 2 мин легко",
+      "sunday_main": "E",
+      "saturday_kind": "easy_parkrun",
+      "weekly_min_estimate": [
+        250,
+        260
+      ],
+      "race_minutes_included": false,
+      "optional_recovery_week": false,
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 7,
       "start": "2026-11-09",
       "end": "2026-11-15",
       "phase": "Аэробная база II",
-      "monday_min": 55,
-      "wednesday_min": 70,
+      "monday_min": 50,
+      "wednesday_min": 55,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 60,
-      "friday_main": "S: 25 мин Z3",
+      "friday_min": 45,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -284,38 +304,37 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
-      "sunday_min": 100,
-      "wednesday_main": "T: 2×12 мин Z4 / 3 мин легко",
+      "sunday_min": 90,
+      "wednesday_main": "T: 2×5 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        345,
-        355
+        300,
+        310
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Продолжить после разгрузки: 100 мин легко. Обе работы остаются контролируемыми.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 8,
       "start": "2026-11-16",
       "end": "2026-11-22",
       "phase": "Аэробная база II",
-      "monday_min": 60,
-      "wednesday_min": 75,
+      "monday_min": 50,
+      "wednesday_min": 55,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 65,
-      "friday_main": "S: 20 мин Z3",
+      "friday_min": 45,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -324,26 +343,25 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
-      "sunday_min": 110,
-      "wednesday_main": "T: 3×10 мин Z4 / 2 мин легко",
+      "sunday_min": 90,
+      "wednesday_main": "T: 3×5 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        370,
-        380
+        300,
+        310
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "T 3×10 мин переносится сюда из декабря. В среду 75 мин для полноценной разминки, ускорений, восстановлений и заминки.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 9,
@@ -351,11 +369,11 @@
       "end": "2026-11-29",
       "phase": "Аэробная база II",
       "monday_min": 60,
-      "wednesday_min": 70,
+      "wednesday_min": 55,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 60,
-      "friday_main": "T: 2×8 мин Z4 / 3 мин легко",
+      "friday_min": 45,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -364,26 +382,25 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
-      "sunday_min": 115,
-      "wednesday_main": "V: 5×3 мин Z4–Z5 / 3 мин легко",
+      "sunday_min": 95,
+      "wednesday_main": "T: 3×5 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        365,
-        375
+        315,
+        325
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Увеличить длительную до 115 мин при нормальном самочувствии; V только на нескользком покрытии, суббота строго лёгкая.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 10,
@@ -421,7 +438,9 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Контроль parkrun 5 декабря; при плохих условиях обычный лёгкий parkrun."
+      "note": "Контроль parkrun 5 декабря; при плохих условиях обычный лёгкий parkrun.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 11,
@@ -429,11 +448,11 @@
       "end": "2026-12-13",
       "phase": "Развитие выносливости",
       "monday_min": 60,
-      "wednesday_min": 70,
+      "wednesday_min": 60,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 60,
-      "friday_main": "S: 25 мин Z3",
+      "friday_min": 50,
+      "friday_main": "S: 2×6 мин / 2 мин легко, RPE 3–4",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -450,18 +469,18 @@
         70
       ],
       "sunday_min": 100,
-      "wednesday_main": "T: 2×12 мин Z4 / 3 мин легко",
+      "wednesday_main": "T: 3×5 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        350,
-        360
+        330,
+        340
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "После контрольной недели начать с 100 мин легко, затем продолжать к 110 мин; не компенсировать пропуски.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 12,
@@ -469,11 +488,11 @@
       "end": "2026-12-20",
       "phase": "Развитие выносливости",
       "monday_min": 60,
-      "wednesday_min": 75,
+      "wednesday_min": 60,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 65,
-      "friday_main": "S: 20 мин Z3",
+      "friday_min": 50,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -482,26 +501,25 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
-      "sunday_min": 110,
-      "wednesday_main": "T: 3×10 мин Z4 / 2 мин легко",
+      "sunday_min": 105,
+      "wednesday_main": "T: 3×5 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        370,
-        380
+        335,
+        345
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "30 минут рабочей части — предел этой среды, не 3×15.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 13,
@@ -512,8 +530,8 @@
       "wednesday_min": 55,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 55,
-      "friday_main": "S: 2×6 мин Z3 / 2 мин легко",
+      "friday_min": 45,
+      "friday_main": "E",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -522,24 +540,25 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
       "sunday_min": 85,
-      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "wednesday_main": "T: 2×6 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        290,
-        300
+        280,
+        290
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Разгрузка 21–27 декабря; удобное окно для поездок."
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 14,
@@ -547,11 +566,11 @@
       "end": "2027-01-03",
       "phase": "Развитие выносливости",
       "monday_min": 60,
-      "wednesday_min": 75,
+      "wednesday_min": 65,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 65,
-      "friday_main": "T: 2×10 мин Z4 / 3 мин легко",
+      "friday_min": 45,
+      "friday_main": "S: 2×6 мин / 2 мин легко, RPE 3–4",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -567,19 +586,19 @@
         60,
         70
       ],
-      "sunday_min": 110,
-      "wednesday_main": "V: 5×3 мин Z4–Z5 / 3 мин легко",
+      "sunday_min": 105,
+      "wednesday_main": "T: 3×8 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        370,
-        380
+        335,
+        345
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "На снегу заменить V на 3×8 мин T или E; не догонять праздничные пропуски.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 15,
@@ -587,11 +606,11 @@
       "end": "2027-01-10",
       "phase": "Развитие выносливости",
       "monday_min": 60,
-      "wednesday_min": 75,
+      "wednesday_min": 65,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 65,
-      "friday_main": "H: 2×12 мин / 3 мин легко",
+      "friday_min": 45,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -600,26 +619,25 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
-      "sunday_min": 115,
-      "wednesday_main": "T: 2×15 мин Z4 / 3 мин легко",
+      "sunday_min": 110,
+      "wednesday_main": "T: 3×8 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        375,
-        385
+        340,
+        350
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Две контролируемые работы; пятничные H-блоки не превращать в гонку.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 16,
@@ -630,8 +648,8 @@
       "wednesday_min": 55,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 55,
-      "friday_main": "T: 2×5 мин Z4 / 2 мин легко",
+      "friday_min": 45,
+      "friday_main": "E",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -640,24 +658,25 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
       "sunday_min": 90,
-      "wednesday_main": "S: 2×8 мин Z3 / 3 мин легко",
+      "wednesday_main": "S: 2×8 мин / 3 мин легко, RPE 3–4",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        295,
-        305
+        285,
+        295
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Разгрузка и решение о входе в специфический блок."
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 17,
@@ -665,8 +684,8 @@
       "end": "2027-01-24",
       "phase": "Специфика I",
       "monday_min": 60,
-      "wednesday_min": 65,
-      "thursday_min": 60,
+      "wednesday_min": 55,
+      "thursday_min": 55,
       "thursday_main": "E",
       "friday_min": 0,
       "friday_main": "Отдых",
@@ -686,18 +705,18 @@
         70
       ],
       "sunday_min": 110,
-      "wednesday_main": "T: 2×8 мин Z4 / 3 мин легко",
-      "sunday_main": "H: 3×8 мин / 4 мин легко; всё внутри 110 мин",
+      "wednesday_main": "T: 2×8 мин / 3 мин легко",
+      "sunday_main": "H: 3×8 мин / 4 мин легко",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        355,
-        365
+        340,
+        350
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Новая нагрузка в воскресенье; среда сокращена. Понедельник — лёгкий E после воскресной длительной недели 16; при усталости сократить без компенсации.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 18,
@@ -735,7 +754,9 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Контроль parkrun 30 января; воскресенье восстановительное. Понедельник остаётся коротким R после H-длительной предыдущей недели."
+      "note": "Контроль parkrun 30 января; воскресенье восстановительное. Понедельник остаётся коротким R после H-длительной предыдущей недели.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 19,
@@ -743,8 +764,8 @@
       "end": "2027-02-07",
       "phase": "Специфика I",
       "monday_min": 60,
-      "wednesday_min": 70,
-      "thursday_min": 65,
+      "wednesday_min": 55,
+      "thursday_min": 55,
       "thursday_main": "E",
       "friday_min": 0,
       "friday_main": "Отдых",
@@ -763,19 +784,19 @@
         60,
         70
       ],
-      "sunday_min": 115,
-      "wednesday_main": "T: 2×10 мин Z4 / 3 мин легко",
-      "sunday_main": "H: 2×15 мин / 5 мин легко; внутри 115 мин",
+      "sunday_min": 110,
+      "wednesday_main": "T: 2×8 мин / 3 мин легко",
+      "sunday_main": "H: 2×15 мин / 5 мин легко",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        370,
-        380
+        340,
+        350
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Первый длинный H-блок. Суббота строго лёгкая; понедельник E после восстановительной длительной недели 18.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 20,
@@ -783,11 +804,11 @@
       "end": "2027-02-14",
       "phase": "Специфика I",
       "monday_min": 40,
-      "wednesday_min": 60,
+      "wednesday_min": 55,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 55,
-      "friday_main": "S: 15 мин Z3",
+      "friday_min": 45,
+      "friday_main": "E",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -796,24 +817,25 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
       "sunday_min": 90,
-      "wednesday_main": "T: 2×6 мин Z4 / 2 мин легко",
+      "wednesday_main": "T: 2×6 мин / 2 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        305,
-        315
+        290,
+        300
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Разгрузка: короткие T и S; оценить восстановление после специфических работ. Понедельник короткий R после H-длительной недели 19."
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 21,
@@ -821,11 +843,11 @@
       "end": "2027-02-21",
       "phase": "Специфика II",
       "monday_min": 60,
-      "wednesday_min": 75,
+      "wednesday_min": 60,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 65,
-      "friday_main": "T: 2×10 мин Z4 / 3 мин легко",
+      "friday_min": 50,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -834,35 +856,34 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
       "sunday_min": 120,
-      "wednesday_main": "V: 5×3 мин Z4–Z5 / 3 мин легко",
+      "wednesday_main": "T: 2×8 мин / 3 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        380,
-        390
+        350,
+        360
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Последняя отдельная V-сессия; при утомлении заменить на 2×10 мин T. Понедельник E после лёгкой длительной недели 20.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 22,
       "start": "2027-02-22",
       "end": "2027-02-28",
       "phase": "Специфика II",
-      "monday_min": 50,
-      "wednesday_min": 65,
-      "thursday_min": 75,
+      "monday_min": 45,
+      "wednesday_min": 60,
+      "thursday_min": 55,
       "thursday_main": "E",
       "friday_min": 0,
       "friday_main": "Отдых",
@@ -881,19 +902,19 @@
         60,
         70
       ],
-      "sunday_min": 125,
-      "wednesday_main": "T: 2×8 мин Z4 / 3 мин легко",
-      "sunday_main": "H: 2×20 мин / 5 мин легко; внутри 125 мин",
+      "sunday_min": 120,
+      "wednesday_main": "T: 2×8 мин / 3 мин легко",
+      "sunday_main": "H: 2×20 мин / 5 мин легко",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        375,
-        385
+        340,
+        350
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "40 мин H — первая экспозиция этого объёма; суббота лёгкая. Понедельник и четверг лёгкие; четверг короче, чтобы сохранить недельный итог.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 23,
@@ -931,7 +952,9 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Контроль parkrun 6 марта; это разгрузочная неделя. Понедельник остаётся коротким R после H-длительной недели 22."
+      "note": "Контроль parkrun 6 марта; это разгрузочная неделя. Понедельник остаётся коротким R после H-длительной недели 22.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 24,
@@ -939,8 +962,8 @@
       "end": "2027-03-14",
       "phase": "Специфика II",
       "monday_min": 60,
-      "wednesday_min": 65,
-      "thursday_min": 70,
+      "wednesday_min": 55,
+      "thursday_min": 50,
       "thursday_main": "E",
       "friday_min": 0,
       "friday_main": "Отдых",
@@ -960,18 +983,18 @@
         70
       ],
       "sunday_min": 125,
-      "wednesday_main": "T: 2×8 мин Z4 / 3 мин легко",
-      "sunday_main": "H: 2×20 мин / 5 мин легко; внутри 125 мин",
+      "wednesday_main": "T: 2×8 мин / 3 мин легко",
+      "sunday_main": "H: 2×20 мин / 5 мин легко",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        380,
-        390
+        350,
+        360
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Последняя большая специфическая длительная: 125 мин, H-блоки 2×20 мин (40 мин работы). H остаётся на том же уровне, что и на неделе 22; понедельник E, четверг короче.",
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
       "monday_main": "E",
-      "monday_effort": "Лёгкий разговорный бег; первые и последние 15 минут Z1, остальное Z2. При усталости сократить до 35–45 минут без компенсации."
+      "monday_effort": "Лёгкий разговорный E, RPE 2–3; первые и последние 15 минут Z1, без минимального пульса и без погони за Z2. 148–150 уд/мин — временный личный ориентир для замедления, не физиологический потолок; если не удаётся говорить полными предложениями — замедлиться."
     },
     {
       "week": 25,
@@ -979,11 +1002,11 @@
       "end": "2027-03-21",
       "phase": "Специфика II",
       "monday_min": 45,
-      "wednesday_min": 75,
+      "wednesday_min": 65,
       "thursday_min": 0,
       "thursday_main": "Отдых",
-      "friday_min": 60,
-      "friday_main": "H: 2×8 мин / 3 мин легко",
+      "friday_min": 50,
+      "friday_main": "E + 4×12 с A по желанию",
       "run_days": [
         "Monday",
         "Wednesday",
@@ -992,24 +1015,25 @@
         "Sunday"
       ],
       "quality_days": [
-        "Wednesday",
-        "Friday"
+        "Wednesday"
       ],
       "saturday_min_estimate": [
         60,
         70
       ],
       "sunday_min": 105,
-      "wednesday_main": "T: 3×8 мин Z4 / 2 мин легко",
+      "wednesday_main": "T: 2×8 мин / 3 мин легко",
       "sunday_main": "E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        345,
-        355
+        325,
+        335
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Консолидация; новых рекордов объёма уже нет."
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 26,
@@ -1017,8 +1041,8 @@
       "end": "2027-03-28",
       "phase": "Тейпер",
       "monday_min": 35,
-      "wednesday_min": 55,
-      "thursday_min": 45,
+      "wednesday_min": 50,
+      "thursday_min": 40,
       "thursday_main": "E",
       "friday_min": 0,
       "friday_main": "Отдых",
@@ -1037,17 +1061,19 @@
         60,
         65
       ],
-      "sunday_min": 75,
-      "wednesday_main": "T: 2×6 мин Z4 / 3 мин легко",
-      "sunday_main": "H: 2×6 мин / 3 мин легко; внутри 75 мин; при усталости E",
+      "sunday_min": 70,
+      "wednesday_main": "T: 2×5 мин / 2 мин легко",
+      "sunday_main": "H: 2×5 мин / 3 мин легко; можно заменить на E",
       "saturday_kind": "easy_parkrun",
       "weekly_min_estimate": [
-        270,
-        275
+        255,
+        260
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "Первый тейпер: сократить лёгкие минуты и рабочие блоки."
+      "note": "Minutes are the planned base scenario; quality is one stimulus at a time. E stays conversational; optional A is relaxed and may be omitted.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     },
     {
       "week": 27,
@@ -1085,17 +1111,85 @@
       ],
       "race_minutes_included": false,
       "optional_recovery_week": false,
-      "note": "3 апреля: 5 км parkrun Z1–низ Z2, до/от парка пешком; при тяжести в ногах 15–20 мин у дома или отдых."
+      "note": "3 апреля: 5 км parkrun Z1–низ Z2, до/от парка пешком; при тяжести в ногах 15–20 мин у дома или отдых.",
+      "monday_main": "R",
+      "monday_effort": "Очень лёгкий R, RPE 1–2, свободный разговор; 35–45 минут по плану, не компенсировать пропуски."
     }
   ],
   "rules": {
     "long_run_ceiling_min": 125,
     "long_run_ceiling_km": 21,
-    "ordinary_training_week_base_ceiling_min": 390,
-    "growth_condition": "After a build week, add the next planned step only when both workouts remain controlled and completed, the long run stays within prescribed effort, ordinary fatigue resolves within 48 hours, and there is no new/increasing pain or illness. Recovery/control weeks stay as planned. If not, repeat or reduce 10–15%; never catch up missed sessions.",
+    "ordinary_training_week_base_ceiling_min": 360,
+    "growth_condition": "Add only the next scheduled step when all scheduled quality parts remain controlled, easy runs pass the talk test, the long run stays within its effort and rolling-30-day distance check, fatigue resolves normally within 48 hours, and there is no illness or new/increasing pain. Recovery/control weeks stay as planned; if not, repeat or reduce 10–15%; never catch up missed sessions.",
     "specific_long_effort": "Updated upper Z3 / lower Z4 is provisional guidance; RPE5-6, stable long blocks; refine using block consistency, recovery and control races",
     "race_week_total_note": "Totals exclude race and race warmup. Saturday commute on foot. Week1 totals are optional ceilings, not completion target.",
-    "monday_distribution": "Easy conversational E in weeks 3,4,5,7,8,9,11,12,14,15,17,19,21,22,24; other Mondays remain R/rest as scheduled, especially after H long runs in weeks 18,20,23,25. If fatigued, shorten an easy Monday to 35–45 min without making up the difference.",
-    "winter_volume_review": "Review actual completed volume, long-run recovery, and weekly schedule during winter before considering any further increase; no preplanned upper branch."
+    "monday_distribution": "Conversational E in weeks 3–5,7–9,11–12,14–15,17,19,21–22,24; R on other scheduled Mondays. After H-long weeks 17,19,22,24 the next Monday is R. Easy E is talk-test and RPE guided; if tired shorten or rest without compensation.",
+    "winter_volume_review": "После недели 19 оцени фактически выполненные недели, восстановление и качество тренировок, прежде чем рассматривать дополнительную позднюю ветку лёгких минут в неделях 21, 22 и 24. Одна только дата не включает эту ветку.",
+    "ordinary_training_week_base_ceiling_note": "Conservative planning choice informed by six-month recorded weekly maximum 355 min in the 10 km cycle and 353.45 min in the half-marathon cycle; not a physiological ceiling. Optional late conditional branch may reach 390 min after review.",
+    "distance_progression": "At every run, compare planned distance with the longest single run in the rolling previous 30 days; this check overrides apparent time-based increases. If the planned distance is about 10% or more above recent longest, reduce or hold distance.",
+    "conditional_late_branch": {
+      "review_after_week": 19,
+      "max_planning_minutes": 390,
+      "not_physiological_ceiling": true,
+      "entry_conditions": [
+        "After week 19, at least 4 actual working weeks of 330–360 min in prior 6–8 calendar weeks (recovery/control weeks need not reach that volume)",
+        "Scheduled quality parts controlled, E passes full-sentence talk test, normal next-day recovery within 48 h",
+        "No illness or new/increasing pain"
+      ],
+      "weeks": {
+        "21": {
+          "monday_min": 60,
+          "wednesday_min": 65,
+          "friday_min": 60,
+          "sunday_min": 120,
+          "weekly_min_estimate": [
+            365,
+            375
+          ],
+          "rule": "Только после успешной оценки по условиям поздней ветки."
+        },
+        "22": {
+          "monday_min": 50,
+          "wednesday_min": 65,
+          "thursday_min": 70,
+          "sunday_min": 120,
+          "weekly_min_estimate": [
+            365,
+            375
+          ],
+          "rule": "Только если неделя 21 прошла стабильно."
+        },
+        "24": {
+          "monday_min": 60,
+          "wednesday_min": 65,
+          "thursday_min": 70,
+          "sunday_min": 125,
+          "weekly_min_estimate": [
+            380,
+            390
+          ],
+          "rule": "Только если неделя 22 прошла стабильно, а контрольная неделя 23 и восстановление были обычными."
+        }
+      },
+      "description": "Optional easy-minute additions only; planning ceiling 390 min, not a physiological ceiling. No extra T/H repetitions or intensity.",
+      "activation": "No date-based activation; use base plan if any condition is not met."
+    },
+    "volume_history": {
+      "10k_2026_max_recorded_week_minutes": 355,
+      "half_marathon_2026_max_recorded_week_minutes": 353.4544718424479,
+      "half_marathon_2026_max_recorded_week_km": 53.92075,
+      "half_marathon_2026_max_week_start": "2026-02-09",
+      "half_marathon_nearby_weeks_minutes": [
+        347.231,
+        349.344
+      ],
+      "half_marathon_2026_plan_max_km": 56.6,
+      "source_files": [
+        "../10k_2026/training_evidence.json",
+        "../half_marathon_2026/training_evidence.json"
+      ],
+      "note": "Recorded volume is not the same as the historical plan: 56.6 km was a planned HM week, not a recorded-minutes maximum."
+    },
+    "base_plan_ceiling_note": "Пик базового плана в 360 минут — консервативный плановый выбор с учётом зарегистрированных максимумов циклов (355 минут в подготовке к 10 км 2026 года и 353,45 минуты в подготовке к полумарафону 2026 года), а не физиологический предел. Условная поздняя ветка может довести объём до 390 минут после оценки восстановления и выполненных тренировок."
   }
 }

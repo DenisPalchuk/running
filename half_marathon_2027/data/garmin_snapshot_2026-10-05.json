@@ -1,0 +1,31 @@
+{
+  "retrieved_date": "2026-10-05",
+  "source": "Fresh Garmin RUNNING settings and fitness estimate retrieved on 2026-10-05.",
+  "purpose": "Current watch reference snapshot. Zone floors are Garmin settings, not lab-verified physiology; the LTHR fitness estimate itself remains dated 2026-08-05.",
+  "running_zones": {
+    "trainingMethod": "LACTATE_THRESHOLD",
+    "restingHeartRateUsed": 43,
+    "lactateThresholdHeartRateUsed": 174,
+    "zone1Floor": 113,
+    "zone2Floor": 139,
+    "zone3Floor": 155,
+    "zone4Floor": 165,
+    "zone5Floor": 174,
+    "maxHeartRateUsed": 192,
+    "sport": "RUNNING",
+    "source_retrieved_date": "2026-10-05",
+    "note": "Integer zone-5 floor displayed by Garmin at LTHR 174; interpreted as rounded UI boundary."
+  },
+  "lactate_threshold": {
+    "lactate_threshold_speed_mps": 2.880008064022579,
+    "lactate_threshold_heart_rate_bpm": 174,
+    "speed_hr_date": "2026-08-05T08:10:57.692",
+    "functional_threshold_power_watts": 430,
+    "weight_kg": 88.8,
+    "power_to_weight": 4.842342342342342,
+    "sport": "RUNNING",
+    "power_date": "2026-07-04T08:13:11.0",
+    "is_stale": false,
+    "note": "HR/speed estimate is dated August 5; zone settings refreshed October 5 do not refresh or validate the LTHR estimate."
+  }
+}
